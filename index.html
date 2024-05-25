@@ -8,12 +8,28 @@
 
 </head>
 <body>
+    <img src="img_ranking.jpg" alt="Ranking">
+    
+    <header class="menu">
+        <nav>
+            <ul>
+                <li><a href="#">Silver Sentinel</a></li>
+                <li><a href="#">Emerald Enforcer</a></li>
+                <li><a href="#">Golden Guardian</a></li>
+                <li><a href="#">Platinum Protector</a></li>
+                <li><a href="#">Ruby Ranger</a></li>
+                <li><a href="#">Diamond Dynamo</a></li>                
+            </ul>
+        </nav>
+    </header>
+    
+
     <form>
-        <label for="vitorias">Vitorias =</label>
-        <input type="number" id="vitorias" name="vitorias" required><br><br>
-        <label for="Derrotas">Derrotas =</label>
-        <input type="number" id="derrotas" name="derrotas" required><br><br>
-        <button type="button" onclick="verificar()">Verificar</button>
+        <label for="vitorias" class="virotias">VITORIAS</label>
+        <input type="number" id="vitorias" class="vitorias" required><br><br>
+        <label for="Derrotas" class="derrodas">DERROTAS</label>
+        <input type="number" id="derrotas" class="derrotas" required><br><br>
+        <button type="button" onclick="verificar()" class="button">Verificar</button>
     </form>
 
     <p id="resultado"></p>
