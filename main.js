@@ -30,29 +30,38 @@ function verificar(){
 
     let rank;
 
+    /*
+    Silver Sentinel Rank 1
+    Golden Guardian Rank 2
+    Platinum Protector Rank 3
+    Emerald Enforcer Rank 4
+    Ruby Ranger Rank 5
+    Diamond Dynamo Rank 6
+    */
+
     switch (true) {
         case (pontosRank < 25):
-            rank = "Jogador sem rank";
+            rank = "JOGADOR SEM RANKING";
             break;
 
         case (pontosRank > 25 && pontosRank < 99):
-            rank = "Broze";
+            rank = "Silver Sentinel";
             break;
 
         case (pontosRank > 100 && pontosRank < 499):
-            rank = "Prata";
+            rank = "Emerald Enforcer";
             break;
 
         case (pontosRank > 500 && pontosRank < 1499):
-            rank = "Ouro";
+            rank = "Golden Guardian";
             break;
 
         case (pontosRank > 1500 && pontosRank < 2999):
-            rank = "Safira";
+            rank = "Ruby Ranger";
             break;
 
         case (pontosRank > 3000):
-            rank = "Diamante";
+            rank = "Diamond Dynamo";
             break;
             
         default:
@@ -61,5 +70,5 @@ function verificar(){
     }
 
     const resultadoElement = document.getElementById("resultado");
-    resultadoElement.textContent = `O jogador tem um saldo de ${vito_derr} vitorias, e está no rank ${rank}`;
+    resultadoElement.textContent = `O JOGADOR TEM UM SALDO DE ${vito_derr} VITORIAS, E ESTÁ NO RANK ${rank}`;
 }
